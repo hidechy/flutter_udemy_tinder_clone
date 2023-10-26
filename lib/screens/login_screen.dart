@@ -29,9 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Center(
           child: Column(
             children: [
-              const SizedBox(
-                height: 120,
-              ),
+              const SizedBox(height: 120),
 
               Image.asset('assets/images/logo.png', width: 300),
 
@@ -108,6 +106,14 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
+              ),
+
+              ElevatedButton(
+                onPressed: () {
+                  emailTextEditingController.text = 'hide.toyoda@gmail.com';
+                  passwordTextEditingController.text = 'hidechy4819';
+                },
+                child: const Text('dummy'),
               ),
 
               const SizedBox(height: 16),
